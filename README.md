@@ -7,8 +7,8 @@ The generated png files are also included here as plot1.png, plot2.png, plot3.pn
 
 The png files should be reprpducable by sourcing the given plot's R script, and then calling the plot function.
 Example:
-source("plot2.R")
-plot2()
+* source("plot2.R")
+* plot2()
 
 Each script should also check to see if the data source is present in the current directory.
 If the data is not present, the script will download and unzip it automatically.
