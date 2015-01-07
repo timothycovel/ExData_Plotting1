@@ -31,8 +31,6 @@ plot2 <- function(){
     pipe("egrep 'Date|^1/2/2007|^2/2/2007' household_power_consumption.txt"),
     sep=";", na.strings="?", colClasses=c("myDate","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric")
   )
-
-  # is there a better way to pre-process the dataset before it is read without a pipe? please comment if you know!
   
   
   # we need a datetime field, we have Date and Time, so merge them with pase() and use strptime() as recommended in the instructions
