@@ -1,3 +1,22 @@
+## Notes
+
+The Assignment description and examples are show below this section.
+
+My solutions to this assignment are in this main directory as plot1.R, plot2.R, plot3.R, and plot4.R
+The generated png files are also included here as plot1.png, plot2.png, plot3.png, and plot4.png
+
+The png files should be reprpducable by sourcing the given plot's R script, and then calling the plot function.
+Example:
+source("plot2.R")
+plot2()
+
+Each script should also check to see if the data source is present in the current directory.
+If the data is not present, the script will download and unzip it automatically.
+
+
+If you have any questions or comments, please let me know!
+
+
 ## Introduction
 
 This assignment uses data from
