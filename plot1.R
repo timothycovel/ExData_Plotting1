@@ -37,8 +37,9 @@ plot1 <- function(){
   #hist(powerdataset$Global_active_power)
 
   #tell R to make a png for the output, set width and height in pixels
-  png(filename="plot1.png", width=480, height=480, units="px")
-
+  #png(filename="plot1.png", width=480, height=480, units="px")
+  postscript(width=480, height=480)
+  
   #run the histogram, set column color and labels
   hist(powerdataset$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power(Kilowatts)")
   
