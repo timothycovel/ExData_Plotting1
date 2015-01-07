@@ -33,8 +33,6 @@ plot3 <- function(){
     sep=";", na.strings="?", colClasses=c("myDate","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric")
   )
   
-  # is there a better way to pre-process the dataset before it is read without a pipe? please comment if you know!
-  
   
   # we need a datetime field, we have Date and Time, so merge them with pase() and use strptime() as recommended in the instructions
   powerdataset$datetime <- paste(powerdataset$Date, powerdataset$Time)
@@ -50,7 +48,7 @@ plot3 <- function(){
   lines(powerdataset$datetime, powerdataset$Sub_metering_2, col="red")
   lines(powerdataset$datetime, powerdataset$Sub_metering_3, col="blue")
   
-  # add the legend
+  # add the legend, "topright" here is much easier than trying to specify coordiance.
   legend(x="topright", c("Sub_Metering_1","Sub_Metering_2","Sub_Metering_3"), 
          lty=c(1,1,1), lwd=c(1,1,1),col=c("black","red","blue"))
   
